@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus — Next-Gen Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span class="brand-name">Nexus<span class="gradient-text">.io</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" id="desktopNav">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#demo" class="nav-link">Live Demo</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle Light / Dark theme">
+          <svg id="sunIcon" class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="moonIcon" class="theme-icon hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="btn btn-primary open-modal-btn">Get Started</button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuToggle" class="icon-btn mobile-only" aria-label="Toggle navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#features" class="mobile-nav-link">Features</a>
+      <a href="#demo" class="mobile-nav-link">Live Demo</a>
+      <a href="#pricing" class="mobile-nav-link">Pricing</a>
+      <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <button class="btn btn-primary open-modal-btn mobile-cta">Get Started Free</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="container hero-container">
+        <!-- Release Badge -->
+        <div class="badge-pill">
+          <span class="badge-dot"></span>
+          <span>Nexus 2.0 is now live</span>
+          <span class="badge-arrow">→</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title">
+          Build faster. Scale effortlessly. <br>
+          <span class="gradient-text">Design beautifully.</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="hero-subtitle">
+          The all-in-one modern engineering platform crafted for forward-thinking teams.
+          Deploy web applications, manage distributed data, and observe telemetry in real time.
+        </p>
+
+        <!-- Action CTAs -->
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-lg open-modal-btn">
+            Start Free Trial
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <a href="#demo" class="btn btn-secondary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Explore Interactive Demo
+          </a>
+        </div>
+
+        <!-- Metrics Row -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-value counter" data-target="99.99">99.99%</span>
+            <span class="metric-label">Guaranteed Uptime SLA</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value counter" data-target="150">150k+</span>
+            <span class="metric-label">Active Developers</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value counter" data-target="12">12ms</span>
+            <span class="metric-label">Average Global Latency</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">4.9/5</span>
+            <span class="metric-label">Customer Satisfaction</span>
+          </div>
+        </div>
+
+        <!-- Hero Dashboard Mockup -->
+        <div class="dashboard-preview-card">
+          <div class="preview-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="window-title">nexus-cluster-us-east // production-stream</div>
+            <div class="window-badge">Status: Healthy</div>
+          </div>
+          <div class="preview-content">
+            <div class="terminal-grid">
+              <div class="stat-box">
+                <span class="stat-caption">Live Ingress Traffic</span>
+                <span class="stat-number">48.2 GB/s</span>
+                <div class="sparkline">
+                  <div class="bar" style="height: 40%"></div>
+                  <div class="bar" style="height: 65%"></div>
+                  <div class="bar" style="height: 50%"></div>
+                  <div class="bar" style="height: 85%"></div>
+                  <div class="bar" style="height: 70%"></div>
+                  <div class="bar" style="height: 95%"></div>
+                  <div class="bar" style="height: 80%"></div>
+                </div>
+              </div>
+              <div class="stat-box">
+                <span class="stat-caption">Active Compute Nodes</span>
+                <span class="stat-number">1,248 Nodes</span>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 78%;"></div>
+                </div>
+                <span class="stat-sub">78% cluster utilization</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-caption">Automated Rollbacks</span>
+                <span class="stat-number">0 Errors</span>
+                <span class="stat-sub text-success">✓ All canary tests verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ENGINEERED FOR EXCELLENCE</span>
+          <h2 class="section-title">Everything you need to ship faster</h2>
+          <p class="section-subtitle">
+            Built from the ground up for modern development stacks. Highly responsive, resilient, and intuitive.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Sub-Millisecond Edge Cache</h3>
+            <p class="feature-card-desc">
+              Distribute static assets and dynamic APIs to 280+ worldwide edge locations in a single click.
+            </p>
+            <a href="#demo" class="feature-learn-more">Learn more →</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Zero-Trust Security</h3>
+            <p class="feature-card-desc">
+              End-to-end TLS 1.3 encryption, automatic secret rotation, and SOC-2 compliant automated audits.
+            </p>
+            <a href="#demo" class="feature-learn-more">Learn more →</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Collaborative Workspaces</h3>
+            <p class="feature-card-desc">
+              Multi-user live debugging, pull request preview environments, and centralized team roles.
+            </p>
+            <a href="#demo" class="feature-learn-more">Learn more →</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Real-Time Observability</h3>
+            <p class="feature-card-desc">
+              Unified dashboards for distributed tracing, structured logs, and automated threshold alerts.
+            </p>
+            <a href="#demo" class="feature-learn-more">Learn more →</a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Developer-First APIs</h3>
+            <p class="feature-card-desc">
+              First-class SDKs for JavaScript, TypeScript, Python, Go, and Rust with auto-generated types.
+            </p>
+            <a href="#demo" class="feature-learn-more">Learn more →</a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">CI/CD Pipeline Automation</h3>
+            <p class="feature-card-desc">
+              Native GitHub & GitLab integrations, instant branch previews, and instant atomic rollbacks.
+            </p>
+            <a href="#demo" class="feature-learn-more">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live Demo Section -->
+    <section class="demo-section" id="demo">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">LIVE INTERACTIVE PREVIEW</span>
+          <h2 class="section-title">See Nexus in action</h2>
+          <p class="section-subtitle">Click through our feature tabs to experience the speed and simplicity yourself.</p>
+        </div>
+
+        <div class="interactive-demo-container">
+          <!-- Tab Buttons -->
+          <div class="demo-tabs" role="tablist">
+            <button class="demo-tab-btn active" data-tab="performance" role="tab">⚡ Performance</button>
+            <button class="demo-tab-btn" data-tab="security" role="tab">🛡️ Security</button>
+            <button class="demo-tab-btn" data-tab="automation" role="tab">⚙️ Automation</button>
+            <button class="demo-tab-btn" data-tab="cli" role="tab">💻 CLI Integration</button>
+          </div>
+
+          <!-- Tab Content Cards -->
+          <div class="demo-display-card">
+            <!-- Performance Tab Pane -->
+            <div class="demo-pane active" id="pane-performance">
+              <div class="pane-grid">
+                <div class="pane-info">
+                  <h3>Hyper-Optimized Global Edge Delivery</h3>
+                  <p>Our intelligent routing automatically serves your users from the closest edge data center with zero configuration.</p>
+                  <ul class="check-list">
+                    <li>✓ Automatic Brotli & Gzip compression</li>
+                    <li>✓ Global Anycast DNS resolution</li>
+                    <li>✓ Dynamic image optimization at the edge</li>
+                  </ul>
+                  <button class="btn btn-primary open-modal-btn">Test Your Latency</button>
+                </div>
+                <div class="pane-visual">
+                  <div class="benchmark-card">
+                    <div class="bench-row">
+                      <span>Nexus Edge CDN</span>
+                      <div class="bench-bar-container"><div class="bench-bar fill-fast"></div></div>
+                      <span class="bench-time">14ms</span>
+                    </div>
+                    <div class="bench-row">
+                      <span>Traditional Cloud</span>
+                      <div class="bench-bar-container"><div class="bench-bar fill-slow"></div></div>
+                      <span class="bench-time">128ms</span>
+                    </div>
+                    <div class="bench-row">
+                      <span>Monolithic VPS</span>
+                      <div class="bench-bar-container"><div class="bench-bar fill-vlow"></div></div>
+                      <span class="bench-time">245ms</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Security Tab Pane -->
+            <div class="demo-pane" id="pane-security">
+              <div class="pane-grid">
+                <div class="pane-info">
+                  <h3>Battle-Tested Zero Trust Architecture</h3>
+                  <p>Safeguard your data with default-deny policies, automated DDoS mitigation, and continuous vulnerability scanning.</p>
+                  <ul class="check-list">
+                    <li>✓ Automated SSL/TLS generation with Let's Encrypt</li>
+                    <li>✓ Layer 7 Web Application Firewall (WAF)</li>
+                    <li>✓ Granular RBAC & SAML / SSO authentication</li>
+                  </ul>
+                  <button class="btn btn-primary open-modal-btn">Review Security Whitepaper</button>
+                </div>
+                <div class="pane-visual">
+                  <div class="security-card">
+                    <div class="sec-status">
+                      <div class="shield-circle">🛡️</div>
+                      <div>
+                        <h4>Cluster Shield Active</h4>
+                        <p class="sec-sub">0 anomalies detected in last 24 hours</p>
+                      </div>
+                    </div>
+                    <div class="sec-log-box">
+                      <div class="sec-line"><span class="tag-ok">PASS</span> TLS 1.3 Handshake Enforced</div>
+                      <div class="sec-line"><span class="tag-ok">PASS</span> Port Scanning Attempt Blocked</div>
+                      <div class="sec-line"><span class="tag-ok">PASS</span> Token Expiration Verified</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Automation Tab Pane -->
+            <div class="demo-pane" id="pane-automation">
+              <div class="pane-grid">
+                <div class="pane-info">
+                  <h3>Seamless Git Deployments</h3>
+                  <p>Simply `git push` to your main branch. Nexus handles building, static analysis, containerization, and atomic swap.</p>
+                  <ul class="check-list">
+                    <li>✓ Ephemeral staging environments per PR</li>
+                    <li>✓ Instant zero-downtime rollbacks</li>
+                    <li>✓ Webhook triggers & Slack alerts</li>
+                  </ul>
+                  <button class="btn btn-primary open-modal-btn">Connect Git Repository</button>
+                </div>
+                <div class="pane-visual">
+                  <div class="git-flow-card">
+                    <div class="flow-step completed">
+                      <span class="step-num">1</span>
+                      <span>git push origin main</span>
+                      <span class="step-badge">✓ Done</span>
+                    </div>
+                    <div class="flow-step completed">
+                      <span class="step-num">2</span>
+                      <span>Run unit & integration tests</span>
+                      <span class="step-badge">✓ 42 Passed</span>
+                    </div>
+                    <div class="flow-step active-flow">
+                      <span class="step-num">3</span>
+                      <span>Distribute to global edge</span>
+                      <span class="step-badge pulse">In Progress...</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CLI Tab Pane -->
+            <div class="demo-pane" id="pane-cli">
+              <div class="pane-grid">
+                <div class="pane-info">
+                  <h3>A CLI That Feels Like Magic</h3>
+                  <p>Manage environments, run remote migrations, and tail production logs right inside your native terminal.</p>
+                  <ul class="check-list">
+                    <li>✓ One-command deployments with `nexus deploy`</li>
+                    <li>✓ Real-time streaming logs with `nexus logs -f`</li>
+                    <li>✓ Encrypted secrets sync with `nexus env:pull`</li>
+                  </ul>
+                  <button class="btn btn-primary open-modal-btn">Install Nexus CLI</button>
+                </div>
+                <div class="pane-visual">
+                  <div class="cli-terminal">
+                    <div class="cli-bar">bash — 80x24</div>
+                    <pre><code><span class="c-dim">$</span> npm install -g nexus-cli
+<span class="c-dim">$</span> nexus login
+<span class="c-green">✓ Authenticated as alex@company.com</span>
+<span class="c-dim">$</span> nexus deploy --prod
+<span class="c-cyan">Deploying application...</span>
+<span class="c-green">✨ Production deployment complete!</span>
+<span class="c-yellow">URL: https://nexus-live.dev</span></code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FLEXIBLE PLANS</span>
+          <h2 class="section-title">Transparent pricing for every stage</h2>
+          <p class="section-subtitle">Start for free, then upgrade as your traffic and infrastructure expand.</p>
+
+          <!-- Billing Toggle -->
+          <div class="pricing-toggle-wrapper">
+            <span class="toggle-label" id="monthlyLabel">Monthly</span>
+            <label class="switch">
+              <input type="checkbox" id="pricingToggle" aria-label="Toggle annual billing">
+              <span class="slider round"></span>
+            </label>
+            <span class="toggle-label" id="annualLabel">
+              Annually 
+              <span class="discount-pill">Save 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="pricing-cards-grid">
+          <!-- Tier 1: Starter -->
+          <div class="pricing-card">
+            <div class="tier-header">
+              <h3 class="tier-name">Starter</h3>
+              <p class="tier-desc">Ideal for hobbyists, side projects, and indie developers.</p>
+            </div>
+            <div class="tier-price-box">
+              <span class="currency">$</span>
+              <span class="price-value" data-monthly="19" data-annual="15">19</span>
+              <span class="period">/month</span>
+            </div>
+            <p class="billing-note">Billed monthly</p>
+            <button class="btn btn-outline full-width open-modal-btn">Get Started Free</button>
+            <ul class="tier-features">
+              <li>✓ 3 Active Deployments</li>
+              <li>✓ 50 GB Global Bandwidth</li>
+              <li>✓ Automated SSL & Custom Domains</li>
+              <li>✓ Community Forum Support</li>
+              <li class="disabled">✕ Dedicated IP Address</li>
+              <li class="disabled">✕ 99.99% Uptime SLA</li>
+            </ul>
+          </div>
+
+          <!-- Tier 2: Pro (Featured) -->
+          <div class="pricing-card featured">
+            <div class="popular-ribbon">MOST POPULAR</div>
+            <div class="tier-header">
+              <h3 class="tier-name">Professional</h3>
+              <p class="tier-desc">Designed for scaling startups and fast-moving agile teams.</p>
+            </div>
+            <div class="tier-price-box">
+              <span class="currency">$</span>
+              <span class="price-value" data-monthly="49" data-annual="39">49</span>
+              <span class="period">/month</span>
+            </div>
+            <p class="billing-note">Billed monthly</p>
+            <button class="btn btn-primary full-width open-modal-btn">Start 14-Day Free Trial</button>
+            <ul class="tier-features">
+              <li>✓ Unlimited Deployments</li>
+              <li>✓ 500 GB Global Bandwidth</li>
+              <li>✓ Priority Edge Routing & Global Caching</li>
+              <li>✓ Unlimited Team Collaborators</li>
+              <li>✓ 24/7 Chat & Ticket Support</li>
+              <li>✓ Automated Canary Rollouts</li>
+            </ul>
+          </div>
+
+          <!-- Tier 3: Enterprise -->
+          <div class="pricing-card">
+            <div class="tier-header">
+              <h3 class="tier-name">Enterprise</h3>
+              <p class="tier-desc">Tailored infrastructure, compliance, and guaranteed SLAs.</p>
+            </div>
+            <div class="tier-price-box">
+              <span class="currency">$</span>
+              <span class="price-value" data-monthly="149" data-annual="119">149</span>
+              <span class="period">/month</span>
+            </div>
+            <p class="billing-note">Billed monthly</p>
+            <button class="btn btn-outline full-width open-modal-btn">Contact Sales</button>
+            <ul class="tier-features">
+              <li>✓ Unlimited Everything</li>
+              <li>✓ Dedicated Global IP Range</li>
+              <li>✓ 99.99% Guaranteed Uptime SLA</li>
+              <li>✓ Custom SOC-2 & HIPAA Reports</li>
+              <li>✓ Dedicated Solutions Architect</li>
+              <li>✓ 15-Minute Critical Incident Response</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">LOVED BY BUILDERS</span>
+          <h2 class="section-title">Trusted by thousands of innovative teams</h2>
+          <p class="section-subtitle">Here is what leading engineering leaders have to say about Nexus.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Nexus reduced our cloud deployment pipeline from 18 minutes down to 35 seconds. The edge caching speed is unbelievable."
+            </p>
+            <div class="reviewer-info">
+              <div class="avatar-circle" style="background: #3b82f6;">SC</div>
+              <div>
+                <h4 class="reviewer-name">Sarah Chen</h4>
+                <p class="reviewer-role">VP of Engineering at FinScale</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The developer experience is simply second to none. Our engineers spend time building features instead of fighting cloud configurations."
+            </p>
+            <div class="reviewer-info">
+              <div class="avatar-circle" style="background: #8b5cf6;">MR</div>
+              <div>
+                <h4 class="reviewer-name">Marcus Reed</h4>
+                <p class="reviewer-role">CTO at HyperVibe</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Zero downtime deployments, integrated security, and the slickest CLI I have ever used. We moved 100% of our production workloads here."
+            </p>
+            <div class="reviewer-info">
+              <div class="avatar-circle" style="background: #ec4899;">EL</div>
+              <div>
+                <h4 class="reviewer-name">Elena Lopez</h4>
+                <p class="reviewer-role">Principal Architect at CloudStack</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Contact / Newsletter Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info-col">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2 class="section-title text-left">Let’s build something extraordinary together</h2>
+            <p class="contact-desc">
+              Have questions about migration, enterprise pricing, or custom deployment setups? Our solution architects are ready to help.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="icon">📍</span>
+                <span>Silicon Valley • San Francisco, CA</span>
+              </div>
+              <div class="contact-item">
+                <span class="icon">✉️</span>
+                <span>hello@nexusplatform.dev</span>
+              </div>
+              <div class="contact-item">
+                <span class="icon">💬</span>
+                <span>Live 24/7 developer Discord community</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <form id="contactForm" class="contact-form" novalidate>
+              <h3 class="form-title">Send us a message</h3>
+              <div class="form-group">
+                <label for="nameInput">Full Name</label>
+                <input type="text" id="nameInput" name="name" placeholder="Alex Morgan" required>
+                <span class="error-msg" id="nameError">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput">Email Address</label>
+                <input type="email" id="emailInput" name="email" placeholder="alex@company.com" required>
+                <span class="error-msg" id="emailError">Please provide a valid email</span>
+              </div>
+
+              <div class="form-group">
+                <label for="projectType">Inquiry Type</label>
+                <select id="projectType" name="projectType">
+                  <option value="general">General Inquiry</option>
+                  <option value="enterprise">Enterprise Sales</option>
+                  <option value="demo">Request Architecture Review</option>
+                  <option value="partnership">Partnership Opportunity</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput">Message</label>
+                <textarea id="messageInput" name="message" rows="4" placeholder="Tell us about your project requirements..." required></textarea>
+                <span class="error-msg" id="messageError">Please type your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width" id="submitBtn">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span class="brand-name">Nexus<span class="gradient-text">.io</span></span>
+        </div>
+        <p class="footer-tagline">
+          Empowering the next generation of software creators with state-of-the-art edge infrastructure.
+        </p>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#demo">Live Demo</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#hero">Release Notes</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#demo">Documentation</a>
+          <a href="#demo">API Reference</a>
+          <a href="#features">CLI Guide</a>
+          <a href="#contact">Community</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#contact">About Us</a>
+          <a href="#contact">Careers</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-flex">
+        <p>© 2026 Nexus Technologies, Inc. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#hero" aria-label="Twitter">Twitter / X</a>
+          <a href="#hero" aria-label="GitHub">GitHub</a>
+          <a href="#hero" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#hero" aria-label="Discord">Discord</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Component (Get Started Free) -->
+  <div class="modal-backdrop" id="demoModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <div class="modal-badge">✨ Instant Access</div>
+        <h3 class="modal-title">Get started with Nexus</h3>
+        <p class="modal-desc">Create your free sandbox account in less than 30 seconds. No credit card required.</p>
+      </div>
+      <form id="signupModalForm" class="modal-form">
+        <div class="form-group">
+          <label for="modalEmail">Work Email</label>
+          <input type="email" id="modalEmail" placeholder="you@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="modalName">Your Name</label>
+          <input type="text" id="modalName" placeholder="Jane Doe" required>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Launch Free Sandbox</button>
+      </form>
+      <div class="modal-footer-note">
+        🔒 Free 14-day trial • Cancel anytime • SOC2 Type II Certified
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
